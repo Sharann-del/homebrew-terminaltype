@@ -8,10 +8,11 @@ class Monkeytypetui < Formula
   depends_on "node"
 
   def install
-    system "npm", "install", *std_npm_args
+    libexec.install Dir["*"]
+    bin.install_symlink libexec/"bin/monkeytypetui"
   end
 
   test do
     system "#{bin}/monkeytypetui", "--help"
   end
-end
+end	
