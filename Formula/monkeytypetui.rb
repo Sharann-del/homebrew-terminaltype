@@ -9,7 +9,7 @@ class Monkeytypetui < Formula
 
   def install
     libexec.install Dir["*"]
-    bin.install_symlink libexec/"bin/monkeytypetui"
+    bin.install_symlink libexec/"index.js" => "monkeytypetui"
   end
 
   test do
