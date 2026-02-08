@@ -1,18 +1,18 @@
 class Terminaltype < Formula
-  desc "Monkeytype-inspired terminal typing test"
+  desc "Terminal-based typing test"
   homepage "https://github.com/sharann-del/terminaltype"
   url "https://registry.npmjs.org/terminaltype/-/terminaltype-3.0.0.tgz"
-  sha256 "c8d3eae160a892e32837db3dcae515e843e5383fef52b8141940c8bcf8b6d59f"
+  sha256 "c50f1f10b5e8e0c3574d076a4407877f63c766dc7e0e536b0de650fbf2687380"
   license "MIT"
 
   depends_on "node"
 
   def install
     libexec.install Dir["*"]
-    bin.install_symlink libexec/"index.js" => "monkeytypetui"
+    bin.install_symlink libexec/"index.js" => "terminaltype"
   end
 
   test do
-    system "#{bin}/monkeytypetui", "--help"
+    system "#{bin}/terminaltype", "--help"
   end
-end	
+end
