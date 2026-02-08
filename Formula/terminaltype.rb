@@ -2,7 +2,7 @@ class Terminaltype < Formula
   desc "Terminal-based typing test"
   homepage "https://github.com/sharann-del/terminaltype"
   url "https://registry.npmjs.org/terminaltype/-/terminaltype-4.0.6.tgz"
-  sha256 "21d2814e4472a25e77d7075d2f6d772edcd3e505ce6777c27d601f504e6a85b2"
+  sha256 "29b1d30323be637dbab836ae9c7be108b76529e3bba80b18b412086d61835c77"
   license "MIT"
 
   depends_on "node"
